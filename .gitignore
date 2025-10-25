@@ -1,0 +1,31 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+linkvaultvenv/
+
+# Distribution / packaging
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# IDEs / Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# SQLite database (optional, if you don’t want to push DB)
+*.db
