@@ -1,31 +1,78 @@
-# Byte-compiled / optimized / DLL files
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
-
-# Virtual environment
+*.pyo
+*.pyd
+.Python
+env/
 venv/
-linkvaultvenv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
 
-# Distribution / packaging
-*.egg
-*.egg-info/
-dist/
-build/
-*.whl
+# Flask
+instance/
+.webassets-cache
+.flaskenv
 
-# IDEs / Editors
+# Database
+linkvault.db
+*.sqlite3
+*.db
+
+# Virtual Environment
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# VS Code
 .vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
-# OS files
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# OS
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # Logs
+logs/
 *.log
 
-# SQLite database (optional, if you don’t want to push DB)
-*.db
+# Build
+build/
+dist/
+*.egg-info/
+
+# Secrets
+config_local.py
+.env
+.env.local
+
+# Migrations (only if you want to reset DB on clone)
+migrations/
+
+# CLI script (optional — keep if team uses it)
+# linkvault
