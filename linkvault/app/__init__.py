@@ -35,9 +35,9 @@ def create_app():
     app.register_blueprint(short_bp)  # Root level
 
     # === CLI COMMANDS ===
-    # from app.cli.export import export
-    # from app.cli.import import import_bookmarks
-    # app.cli.add_command(export)
-    # app.cli.add_command(import_bookmarks)
+    from app.cli.export import export
+    from app.cli.imp import import_bookmarks
+    app.cli.add_command(export)
+    app.cli.add_command(import_bookmarks)
 
     return app
